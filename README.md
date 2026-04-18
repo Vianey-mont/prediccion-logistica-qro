@@ -1,1 +1,33 @@
-ProblemExploratory Data Analysis (EDA) and Predictive Modeling to analyze the impact of weather conditions in San Juan del Río on the inbound package volume at the Querétaro Hub.🛠️ What I Did (Step-by-Step)1. Data Integration (SQL & Pandas)Process: Performed an inner join between operational logistics databases and historical weather datasets.Goal: Create a unified baseline to correlate precipitation probability with daily package volume.2. Profitability Analysis (Financial Break-even)Action: Conducted a cost-benefit analysis to identify the "Break-even Point" for hiring third-party transport units.Result: Determined that a drop of 60+ packages renders an additional unit unprofitable, triggering a "cancel" recommendation.3. Predictive Modeling & Automation (Python)Analysis: Developed a Linear Regression model using Scikit-Learn to forecast volume based on weather intensity.Insights: Identified that fog and heavy rain in the San Juan del Río corridor cause an average drop of 400 packages, equivalent to 5 underutilized units.Utilized the simulador_vianey function to automate daily decision-making for fleet deployment.📊 Operational Impact & Decision MatrixThrough data aggregation and modeling, I identified the threshold where external fleet costs exceed revenue:Weather ConditionProjected DropStrategic ActionClear Skies< 60 packagesMaintain Full Fleet (Optimal)Light Rain60 - 160 packagesPreemptive Cut: 1-2 UnitsHeavy Fog/Storm400+ packagesMajor Adjustment: Cut 5+ Units🚀 Key ResultsCost Avoidance: Estimated savings of $18,000 MXN per critical weather event by eliminating idle capacity.Efficiency: Shifted from reactive scheduling to a data-driven proactive model with a validated R2 accuracy score.
+# Logistics Fleet Optimization: Querétaro Hub 🚚⛈️
+
+## Problem
+Exploratory Data Analysis (EDA) and Predictive Modeling to analyze the impact of weather conditions in San Juan del Río on the inbound package volume at the Querétaro Hub.
+
+## 🛠️ What I Did (Step-by-Step)
+
+### 1. Data Integration (SQL & Pandas)
+* **Process:** Performed an inner join between operational logistics databases and historical weather datasets.
+* **Goal:** Create a unified baseline to correlate precipitation probability with daily package volume.
+
+### 2. Profitability Analysis (Financial Break-even)
+* **Action:** Conducted a cost-benefit analysis to identify the "Break-even Point" for hiring third-party transport units.
+* **Result:** Determined that a drop of **60+ packages** renders an additional unit unprofitable, triggering a "cancel" recommendation.
+
+### 3. Predictive Modeling & Automation (Python)
+* **Analysis:** Developed a **Linear Regression** model using Scikit-Learn to forecast volume based on weather intensity.
+* **Insights:** Identified that fog and heavy rain in the San Juan del Río corridor cause an average drop of **400 packages**, equivalent to 5 underutilized units.
+* **Automation:** Utilized the `simulador_vianey` function to automate daily decision-making for fleet deployment.
+
+## 📊 Operational Impact & Decision Matrix
+
+Through data aggregation and modeling, I identified the threshold where external fleet costs exceed revenue:
+
+| Weather Condition | Projected Drop | Strategic Action |
+| :--- | :--- | :--- |
+| **Clear Skies** | < 60 packages | Maintain Full Fleet (Optimal) |
+| **Light Rain** | 60 - 160 packages | Preemptive Cut: 1-2 Units |
+| **Heavy Fog/Storm** | 400+ packages | Major Adjustment: Cut 5+ Units |
+
+## 🚀 Key Results
+* **Cost Avoidance:** Estimated savings of **$18,000 MXN** per critical weather event by eliminating idle capacity.
+* **Efficiency:** Shifted from reactive scheduling to a **data-driven proactive model** with a validated R2 accuracy score.
